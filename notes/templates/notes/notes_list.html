@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+    <h1>Notes List</h1>
+    {{ list_of_notes }}
+    <p>+-+-+-+-+-+-+-+-+-+-+-+-+</p>
+    {% for note in list_of_notes %}
+        <h2> {{ note.auther }} </h2>
+        <p> {{ note.text }} </p>
+        <p> ----------------------------------------------------- </p>
+    {% endfor %}
+
+</body>
+</html>
